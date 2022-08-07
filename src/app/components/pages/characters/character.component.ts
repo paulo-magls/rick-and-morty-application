@@ -20,6 +20,7 @@ import { Character } from '@app/shared/interfaces/character.interface';
                     <h2>{{character.name | slice: 0:18}}</h2>
                 </a>
                 <h4 class="text-light">{{character.species}}, {{character.gender}}</h4>
+                <h4 class="text-light">Status: <span class="{{character.status}}">{{character.status}}</span></h4>
                 <small class="text-light">{{character.created | date}}</small>
             </div>
         </div>
